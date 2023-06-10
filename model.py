@@ -514,7 +514,7 @@ class ImageGen:
     Helper function to generate image based on a single prompt
     """
   def _generate_image(self, prompt, negative_prompt):
-    image = self.stable_diffusion_pipe(prompt, negative_prompt).images[0]
+    image = self.stable_diffusion_pipe(prompt, negative_prompt=negative_prompt).images[0]
     return image
   
 
