@@ -20,6 +20,12 @@ def image_grid(imgs, rows, cols):
     grid = Image.new('RGB', size=(cols*w, rows*h))
     grid_w, grid_h = grid.size
     for i, img in enumerate(imgs):
-        resized_img = img.resize(imgs[1].size, Image.LANCZOS)
+        resized_img = downsample_img(img, imgs[1].size)
         grid.paste(resized_img, box=(i%cols*w, i//cols*h))
     return grid
+
+def save_gif(frames, output_path, duration=300):
+    frames[0].save(output_path, save_all=True, append_images=frames[1:], duration=duration, loop=0)
+    
+def downsample_img(story_keypoint, size):
+    return story_keypoint.resize(size, Image.LANCZOS)
