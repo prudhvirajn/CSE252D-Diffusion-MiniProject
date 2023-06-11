@@ -7,8 +7,8 @@ This is the mini-project for CSE 252D Advanced Computer Vision (Spring 2023). We
 2. [Installing][2]
 3. [Generating Story Board][3]
 
-[1]: https://github.com/prudhvirajn/CSE252D-Diffusion-MiniProject/edit/main/README.md#L11
-[2]: https://github.com/prudhvirajn/CSE252D-Diffusion-MiniProject/edit/main/README.md#L26
+[1]: https://github.com/prudhvirajn/CSE252D-Diffusion-MiniProject#generating-action-prompts-using-chatgpt
+[2]: https://github.com/prudhvirajn/CSE252D-Diffusion-MiniProject/tree/main#installing
 
 ## Generating Action Prompts using ChatGPT
 
