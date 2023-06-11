@@ -1,17 +1,26 @@
 # CSE252D-Diffusion-MiniProject
 
-This is the mini-project for CSE 252D Advanced Computer Vision (Spring 2023). We implement a pipeline to generate story-boards from a start prompt and end prompt. 
+This is the mini-project for CSE 252D Advanced Computer Vision (Spring 2023). We implement a pipeline to generate story-boards from a start prompt and end prompt.
+
+One can run the entire pipeline on Colab here: https://colab.research.google.com/github/prudhvirajn/CSE252D-Diffusion-MiniProject/blob/main/CSE252D_Story_Diffusion.ipynb
+
+If they do not prefer Colab, they can simply run the CSE252D_Story_Diffusion.ipynb notebook locally just comment out `!git clone https://github.com/prudhvirajn/CSE252D-Diffusion-MiniProject.git`. If they wish to customize individual parts, please refer to the documentation below. 
 
 ## Table of Contents
-1. [Generating Action Prompts using ChatGPT][1]
+1. [Generating Intermediate Prompts using ChatGPT][1]
 2. [Structure of dataset.json][2]
 3. [Installing dependencies][3]
 4. [Generating Story Board][4]
 
-[1]: https://github.com/prudhvirajn/CSE252D-Diffusion-MiniProject#generating-action-prompts-using-chatgpt
-[2]: https://github.com/prudhvirajn/CSE252D-Diffusion-MiniProject/tree/main#installing
+[1]: https://github.com/prudhvirajn/CSE252D-Diffusion-MiniProject#generating-intermediate-prompts-using-chatgpt
+[2]: https://github.com/prudhvirajn/CSE252D-Diffusion-MiniProject/tree/main#dataset.json
+[3]: https://github.com/prudhvirajn/CSE252D-Diffusion-MiniProject/tree/main#installing
 
-## Generating Action Prompts using ChatGPT
+## Generating Intermediate Prompts using ChatGPT
+
+Given a start and end text prompt, we use ChatGPT to generate intermediate prompts that form a possible explanation of how the start scene relates to the end scene. Essentially, we use ChatGPT to form a script that we will render using Diffusion pipelines. 
+
+Unfortunately, ChatGPT API requires a paid account to generate keys. Regrettably we are unable to provide an automated script to generate the intermediate prompts. 
 
 Pass in the Input:
 ```
