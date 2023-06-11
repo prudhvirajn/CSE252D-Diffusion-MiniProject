@@ -5,7 +5,7 @@ This is the mini-project for CSE 252D Advanced Computer Vision (Spring 2023). We
 ## Table of Contents
 1. [Generating Action Prompts using ChatGPT][1]
 2. [Structure of dataset.json][2]
-3. [Installing][3]
+3. [Installing dependencies][3]
 4. [Generating Story Board][4]
 
 [1]: https://github.com/prudhvirajn/CSE252D-Diffusion-MiniProject#generating-action-prompts-using-chatgpt
